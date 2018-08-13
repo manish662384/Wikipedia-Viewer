@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Wikipedia Viewer</title>
+	</head>
+	<body>
+
+		<header>
+			<img src="wikipedia-image.png">
+			<h1>Wikipedia Search</h1>
+			
+
+			<form name="searchForm" class="search" autocomplete="off">
+				<input type="text" name="search" placeholder="Wikipedia Search...">
+				<button type="submit" id="submit-button">
+					<i class="fas fa-search"></i>
+				</button>
+				
+				<a href="https://en.wikipedia.org/wiki/Special:Random" target="_blank">
+					<i class="fas fa-random"></i>
+				</a>
+			</form>
+
+		</header>
+
+		<section>
+			<!-- <div id="emptySearch"></div> -->
+			<div id="mainDiv"></div>
+		</section>
+		<footer></footer>
+	
+
+	<script type="text/javascript" src="main.js"></script>	
+	</body>
+</html>
