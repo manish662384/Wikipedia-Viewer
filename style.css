@@ -2,7 +2,8 @@
 body{
 	text-align: center;
 	padding-top: 40px;
-	padding-bottom: 40px;
+	padding-bottom: 5px;
+	/*background-color: #f1f1f1;*/
 }
 
 form{
@@ -19,34 +20,36 @@ h1{
 }
 
 .search{
-	/*position: relative;*/
-	margin-top: 30px;
+	margin-top: 50px;
 }
 
 .search input{
 	width: 250px;
 	height: 50px;
-	border: 1px solid #000;
+	font-weight: 600;
+	font-style: oblique;
+	border: 2px solid #BFC9CA;
 	border-radius: 20px;
 	text-indent: 9px;
 	transition: width 0.5s ease-in-out;
 }
 
 .search input:focus{
-	width: 500px;
+	width: 450px;
 	outline: none;
 	box-shadow: 0 0 5px rgba(109,207,246,.5);
-	border-color: #66CC75;
+	border: 1px solid #669ECC/*#66CC75*/;
 }
 .search .fa-search{
 	margin-left: -100px;
 	font-size: 19px;
 	width: 20px;
 	border: none;
+	color: #000;
 	cursor: pointer;
 	-webkit-transition: font-size 0.3s ease-in-out;
     -moz-transition: font-size 0.3s ease-in-out;
-    transition: font-size 0.3s ease-in-out;    	
+    transition: font-size 0.3s ease-in-out; 	
 }
 .search .fa-random{
 	margin-left: -60px;
@@ -72,13 +75,17 @@ h1{
 }
 #emptySearch{
 	margin-top: 50px;
+	color: red;
+	font-style: oblique;
+	margin-left: 20px;
+	margin-right: 20px;
 }
 #mainDiv{
 	margin-top: 50px;
 }
 
 #article{
-	background-color: #f1f1f1;
+	background-color: #ffffff;
 	max-width: 60%;
 	margin-left: auto;
 	margin-right: auto;
@@ -96,6 +103,8 @@ h1{
 
 #article #title{
 	display: inline-block;
+	font-size: 24px;
+	font-weight: bold;
 }
 #article #description{
 	font-style: oblique;
@@ -112,3 +121,66 @@ h1{
 	font-size: 18px;	
 }
 
+.maxArticles{
+	font-style: oblique;
+	color: red;
+}
+
+#buttonDiv{
+	margin-top: 50px;
+}
+#buttonMaxArticles{
+	width: 60%;
+	background-color: #235F9C;
+	font-weight: bold;
+	border: 2px solid #235F9C;
+}
+#buttonMaxArticles:hover{
+	/*background-color: #1B4F72;*/
+	background-color: #FFF;
+	color: #235F9C;
+}
+
+footer{
+	margin-top: 100px;
+	margin-bottom: 0px;
+	font-style: oblique;
+}
+footer h6{
+	font-size: 1.1em;
+}
+
+
+/*--------- Media Queries ---------*/
+
+@media (max-width: 555px){
+	header img{
+		width: 200px;
+		height: 200px;
+	}
+
+	h1{
+		font-size: 1.7rem;
+	}
+
+	.search input{
+		width: 160px;
+	}
+
+	.search input:focus{
+		width: 260px;
+	}
+
+	#article{
+		max-width: 80%;
+	}
+
+	#buttonMaxArticles{
+		width: 80%;
+	}
+
+	#emptySearch h4,
+	.maxArticles h4{
+		font-size: 1.3em;
+	}	
+}
